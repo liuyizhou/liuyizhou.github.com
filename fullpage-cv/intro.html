@@ -1,4 +1,73 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div id="react-content"></div>
+    <script type="text/babel">
+    var Header = React.createClass({
+        render: function(){
+            return (
+                <header className="clearfix" id="header">
+                    <div className="col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <a href="javascript:;" id="logo">
+                            <img className="img-circle" src="https://pic1.zhimg.com/68134fc71f13f3658b6d1f1783cdb05c_l.jpg" alt="avatar" />
+                            <span>tasty</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-offset-4 col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <ul className="nav navbar-nav" id="nav">
+                            <li><a href="">简介</a></li>
+                            <li><a href="">案例</a></li>
+                            <li><a href="">摄影</a></li>
+                            <li><a href="">更多</a></li>
+                        </ul>
+                    </div>
+                </header>
+            );
+        }
+    });
+    var Intro = React.createClass({
+            render: function(){
+                return (
+                    <div className="container">
+                        <div className="main-wrapper">
+                            <div className="col-lg-12">
+                                <div className="avatar-warp">
+                                    <img className="avatar img-responsive" src="http://wx.qlogo.cn/mmopen/kWDDPO3KRLw4FibUzicco5EG5ImXMPqQGCxMFo5pPVS3Gm243lJIHw5RpmBgX9tRn8yhXRYBtRgfresDyBMq2vUgHh0cicGejiah/0" alt="avatar" />
+                                </div>
+                                <section className="markdown text-center">
+                                    <h1>信仰比知识更难动摇,热爱比尊重更难变易</h1>
+                                    <hr />
+                                    <p>刘畅</p>
+                                    <p>23岁</p>
+                                    <p>前端工程师</p>
+                                    <p>tastychang@163.com</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        });
+    ReactDOM.render(
+        <div className="react-content">
+            <Header />
+            <Intro />
+        </div>,
+        document.getElementById('react-content')
+    );
+    </script>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
@@ -153,4 +222,4 @@ if(/AppleWebKit.*mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
     }
 }
 </script>
-</html>
+</html> -->
