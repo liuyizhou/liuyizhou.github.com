@@ -6878,3 +6878,93 @@ body {
 .markdown h1 {
     font-size: 28px;
 }
+.toc {
+    font-size: 14px;
+    margin: 36px 0 24px;
+    background: #fbfbfb;
+    border-left: 2px solid #eee;
+}
+.toc>ol{
+    padding: 8px 40px;
+}
+.toc>ol>li{
+    padding: 5px 0;
+}
+.intro-form{
+  max-width: 540px;
+}
+.form-ctrl-label{
+    text-align: left;
+    vertical-align: middle;
+}
+.icon-mail {
+    position: absolute;
+    top: .15625em;
+    left: 0;
+    width: 1em;
+    height: .75em;
+    background-color: rgb(45,183,245);
+}
+.icon {
+    line-height: 100%;
+    width: 1em;
+    height: 1em;
+    position: relative;
+}
+.send{
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+.icon-mail:before, .icon-mail:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: .4em .5em;
+    border-style: solid;
+}
+.icon-mail:before {
+    top: 0;
+    border-color: rgb(249, 249, 249) transparent transparent transparent;
+}
+.icon-mail:after {
+    top: -.0625em;
+    border-color: rgb(45,183,245) transparent transparent transparent;
+}
+.icon-tag {
+    position: absolute;
+    top: 0;
+    left: .25em;
+    width: .49em;
+    height: .75em;
+    background-color: rgb(102, 102, 102);
+    border-top-left-radius: .0625em;
+    border-top-right-radius: .0625em;
+}
+.icon-tag:before {
+    left: 0;
+    border-color: rgb(102, 102, 102) transparent transparent rgb(102, 102, 102);
+}
+.icon-tag:before, .icon-tag:after {
+    content: "";
+    position: absolute;
+    top: .75em;
+    width: 0;
+    height: 0;
+    border-width: .125em;
+    border-style: solid;
+}
+.icon-tag:after {
+    left: .25em;
+    border-color: rgb(102, 102, 102) rgb(102, 102, 102) transparent transparent;
+}
+.icon-tag:before, .icon-tag:after {
+    content: "";
+    position: absolute;
+    top: .75em;
+    width: 0;
+    height: 0;
+    border-width: .125em;
+    border-style: solid;
+}
