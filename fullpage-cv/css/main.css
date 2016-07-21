@@ -6855,11 +6855,20 @@ body {
     background: #fff;
     overflow: hidden;
     position: relative;
-        width: 92%;
+    width: 92%;
     margin: 0 auto;
     border-radius: 6px;
     padding: 24px 0 0;
     margin-bottom: 24px;
+}
+.main-container {
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    padding: 0 6% 120px 4%;
+    margin-left: -1px;
+    min-height: 500px;
+    border-left: 1px solid #e9e9e9;
 }
 .avatar-warp{
   margin: 0 auto;
@@ -6877,6 +6886,28 @@ body {
 }
 .markdown h1 {
     font-size: 28px;
+}
+.markdown h1 .subtitle {
+    font-weight: 400;
+    font-size: 80%;
+    margin-left: 12px;
+}
+.markdown h3 {
+    font-size: 18px;
+}
+.markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+    color: #404040;
+    font-family: lato,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+    margin: 1.6em 0 .6em;
+    font-weight: 500;
+    clear: both;
+}
+.markdown hr {
+    height: 1px;
+    border: 0;
+    background: #e9e9e9;
+    margin: 16px 0;
+    clear: both;
 }
 .toc {
     font-size: 14px;
@@ -6941,7 +6972,6 @@ body {
     border-style: solid;
     border-color: rgb(45,183,245);
 }
-
 .icon-stats {
     top: 0;
     left: 0;
@@ -6961,6 +6991,37 @@ body {
     width: 1em;
     height: .125em;
     background-color: rgb(45,183,245);
+}
+.redirect{
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+.icon-arrowRight {
+    left: 0;
+}
+.icon-arrowRight, .icon-arrowLeft {
+    top: .25em;
+}
+.icon-arrowRight, .icon-arrowLeft, .icon-arrowDown, .icon-arrowUp {
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    background-color: rgb(45,183,245);
+}
+.icon-arrowRight:after {
+    left: .5em;
+    border-color: transparent transparent transparent rgb(45,183,245);
+}
+.icon-arrowRight:after, .icon-arrowLeft:after {
+    top: -.25em;
+}
+.icon-arrowRight:after, .icon-arrowLeft:after, .icon-arrowDown:after, .icon-arrowUp:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: .5em;
+    border-style: solid;
 }
 .tech-skill-list{
   list-style: none;
@@ -7008,4 +7069,14 @@ body {
   border-color: rgb(45, 183, 245);
   color: #fff;
   width: 25%;
+}
+
+.preview-image-boxes {
+    float: right;
+    margin: 0 0 70px 28px;
+    clear: both;
+    width: 420px;
+}
+.preview-img{
+  width: 420px;
 }

@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="build/react.js"></script>
     <script src="build/react-dom.js"></script>
     <script src="build/browser.min.js"></script>
@@ -47,8 +50,8 @@
                                     <hr />
                                     <form className="form-horizontal intro-form">
                                         <div className="form-group">
-                                            <div className="col-xs-2 form-ctrl-label">姓名：</div>
-                                            <div className="col-xs-10">刘畅</div>
+                                            <div className="col-sm-2 form-ctrl-label">姓名：</div>
+                                            <div className="col-sm-10">刘畅</div>
                                         </div>
                                         <div className="form-group">
                                             <div className="col-sm-2 form-ctrl-label">年龄：</div>
@@ -64,57 +67,105 @@
                                                 <a href="mailto:tastychang@163.com">
                                                     <span className="icon send"><span className="icon-mail"></span></span>
                                                 </a>
-                                                tastychang@163.com 
+                                                tastychang@163.com
                                             </div>
                                         </div>
                                         <div className="form-group">
                                             <div className="col-sm-2 form-ctrl-label">技能：</div>
-                                            <div className="col-sm-10"><span className="icon"><span className="icon-stats"></span></span></div>
+                                            <div className="col-sm-10"><span className="icon"><span className="icon-stats"></span></span>
+                                            </div>
                                             <div className="col-sm-offset-2 col-sm-10 tech-skill">
                                                 <ul className="tech-skill-list">
-                                                    <li><h4>Javascript</h4></li>
-                                                    <li><h4>HTML5</h4></li>
-                                                    <li><h4>css3</h4></li>
-                                                    <li><h4>NODE.JS</h4></li>
-                                                    <li><h4>ASP.NET&C#</h4></li>
-                                                    <li><h4>Photoshop</h4></li>
+                                                    <li>
+                                                        <h4>Javascript</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>HTML5</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>css3</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>NODE.JS</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>ASP.NET&C#</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Photoshop</h4>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div className="form-group">
                                             <div className="col-sm-2 form-ctrl-label">简介：</div>
-                                                <div className="col-sm-10">
-                                                    <p>具有 JavaScript 开发经验，使用过如jQuery常见类库或框架。</p>
-                                                    <p>了解 AngularJS 、avalon 等 MVC 框架，有单页面应用经验。</p>
-                                                    <p>对 Web 性能优化感到兴奋，乐于钻研前端效果的实现。喜欢发现和尝试新的前端技术，阅读开源的高级项目，旨在提高编写高质量的前端代码。</p>
-                                                    <p>有一定的网页设计能力，偏向简约风格，了解交互设计准则和响应式设计。</p>
-                                                    <p>了解Axure等网页原型工具，能充分了解产品目标和意图。</p>
-                                                    <p>热衷于产品和前端技术的交流讨论。</p>
-                                                </div>
+                                            <div className="col-sm-10">
+                                                <p>具有 JavaScript 开发经验，使用过如jQuery常见类库或框架。</p>
+                                                <p>了解 AngularJS 、avalon 等 MVC 框架，有单页面应用经验。</p>
+                                                <p>对 Web 性能优化感到兴奋，乐于钻研前端效果的实现。喜欢发现和尝试新的前端技术，阅读开源的高级项目，旨在提高编写高质量的前端代码。</p>
+                                                <p>有一定的网页设计能力，偏向简约风格，了解交互设计准则和响应式设计。</p>
+                                                <p>了解Axure等网页原型工具，能充分了解产品目标和意图。</p>
+                                                <p>热衷于产品和前端技术的交流讨论。</p>
+                                            </div>
                                         </div>
                                         <div className="form-group">
                                             <div className="col-sm-2 form-ctrl-label">兴趣：</div>
-                                                <div className="col-sm-10">
-                                                    <p>对移动端前端开发的兴趣更加浓厚</p>
-                                                    <p>投资、金融小白</p>
-                                                    <p>入门级健身人、好久打一次的篮球爱好者</p>
-                                                    <p>不懂构图、光线、后期的摄影爱好者</p>
-                                                </div>
+                                            <div className="col-sm-10">
+                                                <p>对移动端前端开发的兴趣更加浓厚</p>
+                                                <p>投资、金融小白</p>
+                                                <p>入门级健身人、好久打一次的篮球爱好者</p>
+                                                <p>不懂构图、光线、后期的摄影爱好者</p>
+                                            </div>
                                         </div>
                                     </form>
                                 </section>
-                                <div></div>
-                                
                             </div>
                         </div>
                     </div>
                 );
             }
-        });
+    });
+    var Case = React.createClass({
+        render: function(){
+            return(
+                <div className="container">
+                    <div className="main-wrapper">
+                        <div className="col-lg-2">
+                            <ul>
+                                <li>实践案例</li>
+                                <li>小型业务</li>
+                            </ul>
+                        </div>
+                        <div className="col-lg-10 main-container">
+                            <article className="markdown">
+                                <h1>Cases<span className="subtitle">实践案例</span></h1>
+                                <section className="markdown">
+                                    <h3><a href="">共筹网</a></h3>
+                                    <div className="preview-image-boxes">
+                                        <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                    </div>
+                                    <p>前端负责人。搭建了前端的整体架构，包括：制定前端静态资源目录结构和代码标准,网站前端业务层面开发。根据团队之前的开发进行了重构,分离前后端职责，提高开发效率。负责共筹网多终端的响应式设计与实现</p>
+                                    <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                    <hr />
+                                    <h3><a href="">夸克资讯</a></h3>
+                                    <div className="preview-image-boxes">
+                                        <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                    </div>
+                                    <p>前端独立制作了资讯的阅读展示，和文章评论系统开发，响应式设计与实现。包括后台的富文本文章发布等。</p>
+                                    <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                    <hr />
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            ); 
+        }           
+    });
     ReactDOM.render(
         <div className="react-content">
             <Header />
-            <Intro />
+            <Case />
         </div>,
         document.getElementById('react-content')
     );
@@ -168,9 +219,9 @@
                         <a href="http://www.gongchou.com/" target="_blank">深圳共筹互联网金融服务有限公司</a>
                     </div>
                     <section>
-                        <p>前端负责人。<strong>搭建了前端的整体架构</strong>，包括：</p>
-                        <p>制定前端静态资源目录结构和代码标准,网站前端业务层面开发。根据前者开发代码构建工具重构开发,分离前后端职责，提高开发效率。</p>
-                        <p>此外，还负责共筹网多终端的响应式设计实现</p>
+                        <p>前端负责人。搭建了前端的整体架构，包括：制定前端静态资源目录结构和代码标准,网站前端业务层面开发。根据前者开发代码构建工具重构开发,分离前后端职责，提高开发效率。负责共筹网多终端的响应式设计与实现</p>
+                        <p></p>
+                        <p></p>
                     </section>
                 </div>
                 <div class="historyitem">
