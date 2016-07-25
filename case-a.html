@@ -7,7 +7,6 @@
     <meta name="description" content="liuchang's page,let u know me" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="build/react.js"></script>
-    <script src="build/react-dom.js"></script>
     <script src="build/browser.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -55,33 +54,26 @@
                     <article className="markdown">
                         <h1>Cases<span className="subtitle">实践案例</span></h1>
                         <section className="markdown">
-                            <h3><a href="">共筹网</a></h3>
+                            <h3 id="共筹网"><a href="#共筹网">共筹网</a></h3>
                             <div className="preview-image-boxes">
-                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                <img className="preview-img" src="img/gc.png" />
                             </div>
                             <p>前端负责人。搭建了前端的整体架构，包括：制定前端静态资源目录结构和代码标准,网站前端业务层面开发。根据团队之前的开发进行了重构,分离前后端职责，提高开发效率。负责共筹网多终端的响应式设计与实现</p>
-                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                            <p><a href="http://gongchou.com/" target="_blank">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
                             <hr />
-                            <h3><a href="">夸克资讯</a></h3>
+                            <h3 id="夸克资讯"><a href="#夸克资讯">夸克资讯</a></h3>
                             <div className="preview-image-boxes">
-                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                <img className="preview-img" src="img/kk.png" />
                             </div>
                             <p>前端独立制作了资讯的阅读展示，和文章评论系统开发，响应式设计与实现。包括后台的富文本文章发布等。</p>
-                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                            <p><a href="http://gongchou.com/article" target="_blank">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
                             <hr />
-                            <h3><a href="">VC Saas</a></h3>
+                            <h3 id="VC Saas"><a href="#VC Saas">VC Saas</a></h3>
                             <div className="preview-image-boxes">
-                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                <img className="preview-img" src="img/vc.png" />
                             </div>
                             <p>vc-saas是一个服务于创投/基金/投资管理机构的云服务平台，是一个多入口的单页应用，完成了整个应用的前端开发，包括UI框架，angular SPA，和gulp构建工具等</p>
-                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
-                            <hr />
-                            <h3><a href="">梦创空间</a></h3>
-                            <div className="preview-image-boxes">
-                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
-                            </div>
-                            <p>搭建了梦创空间的前端环境，开发和维护了最初版本的官网。</p>
-                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                            <p><a href="http://vcsaas.cn/" target="_blank">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
                         </section>
                     </article>
                 </div>
@@ -100,7 +92,7 @@
             ); 
         }           
     });
-    ReactDOM.render(
+    React.render(
         <div className="react-content">
             <Header />
             <Case />

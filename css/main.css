@@ -7123,6 +7123,9 @@ body {
 .preview-img{
   width: 420px;
 }
+.preview-img-sm{
+  width: 220px;
+}
 .menu{
     position: relative;
 }

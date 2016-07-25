@@ -7,7 +7,6 @@
     <meta name="description" content="liuchang's page,let u know me" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="build/react.js"></script>
-    <script src="build/react-dom.js"></script>
     <script src="build/browser.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -45,11 +44,11 @@
                         <div className="main-container">
                             <article className="markdown">
                                 <h1>了解更多<span className="subtitle">More</span></h1>
-                                
                                 <blockquote>
                                     <p>古人有云『 问之以是非而观其志，穷之以辞辩而观其变，咨之以计谋而观其识，告之以难而观其勇 ，醉之以酒而观其性 ，临之以利而观其廉，期之以事而观其信 』，而时至今日了解一个人，追踪他的网络踪迹、社交媒体历史就能有大致了解了
                                     </p>
                                 </blockquote>
+                                <img src="img/social.jpg" alt="Social Media" />
                                 <p>了解更多或者联系我的社交网路 Social Network </p>
                                 <hr />
                                 <p><a href="#">微信账号</a></p>
@@ -67,7 +66,7 @@
             )
         }
     });
-    ReactDOM.render(
+    React.render(
         <div className="react-content">
             <Header />
             <More />
