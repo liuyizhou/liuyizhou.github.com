@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="liuchang's page,let u know me" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div id="react-content"></div>
+    <script type="text/babel">
+    var Header = React.createClass({
+        render: function(){
+            return (
+                <header className="clearfix" id="header">
+                    <div className="col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <a href="javascript:;" id="logo">
+                            <img className="img-circle" src="https://pic1.zhimg.com/68134fc71f13f3658b6d1f1783cdb05c_l.jpg" alt="avatar" />
+                            <span>tasty</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-offset-4 col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <ul className="nav navbar-nav" id="nav">
+                            <li><a href="">简介</a></li>
+                            <li><a href="">案例</a></li>
+                            <li><a href="">更多</a></li>
+                        </ul>
+                    </div>
+                </header>
+            );
+        }
+    });
+    var More = React.createClass({
+        render: function(){
+            return (
+            <div>
+                <div className="container">
+                    <div className="main-wrapper">
+                        <div className="main-container">
+                            <article className="markdown">
+                                <h1>了解更多<span className="subtitle">More</span></h1>
+                                
+                                <blockquote>
+                                    <p>古人有云『 问之以是非而观其志，穷之以辞辩而观其变，咨之以计谋而观其识，告之以难而观其勇 ，醉之以酒而观其性 ，临之以利而观其廉，期之以事而观其信 』，而时至今日了解一个人，追踪他的网络踪迹、社交媒体历史就能有大致了解了
+                                    </p>
+                                </blockquote>
+                                <p>了解更多或者联系我的社交网路 Social Network </p>
+                                <hr />
+                                <p><a href="#">微信账号</a></p>
+                                <p><a href="http://weibo.com/tastychang" target="_blank">个人微博</a></p>
+                                <p><a href="http://www.zhihu.com/people/liuyizhou" target="_blank">知乎账号</a></p>
+                                <hr />
+                                <p><a href="http://www.cnblogs.com/goodbeypeterpan/" target="_blank">我的博客</a></p>
+                                <p><a href="">github</a></p>
+                                <p><a href="http://500px.me/community/user-details/1bead4a88490fa937c9510ab224517719" target="_blank">摄影作品</a></p>
+                            </article>
+                      </div>    
+                    </div>
+                </div>
+            </div>
+            )
+        }
+    });
+    ReactDOM.render(
+        <div className="react-content">
+            <Header />
+            <More />
+        </div>,
+        document.getElementById('react-content')
+    );
+    </script>
+</body>
+
+</html>

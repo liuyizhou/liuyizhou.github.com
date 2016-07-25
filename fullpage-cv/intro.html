@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="liuchang's page,let u know me" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="build/react.js"></script>
     <script src="build/react-dom.js"></script>
@@ -28,7 +29,6 @@
                         <ul className="nav navbar-nav" id="nav">
                             <li><a href="">简介</a></li>
                             <li><a href="">案例</a></li>
-                            <li><a href="">摄影</a></li>
                             <li><a href="">更多</a></li>
                         </ul>
                     </div>
@@ -125,47 +125,154 @@
                 );
             }
     });
+    var NavContent = React.createClass({
+        render: function(){
+            return(
+                <div className="col-lg-3 row">
+                    <ul className="nav nav-pills nav-stacked menu">
+                        <li className="menu-item menu-item-selected"><a href="">实践案例</a></li>
+                        <li className="menu-item"><a href="">小型业务</a></li>
+                    </ul>
+                </div>
+            );
+        }
+    });
+    var CaseBig = React.createClass({
+        render: function(){
+            return(
+                <div className="col-lg-9 main-container">
+                    <article className="markdown">
+                        <h1>Cases<span className="subtitle">实践案例</span></h1>
+                        <section className="markdown">
+                            <h3><a href="">共筹网</a></h3>
+                            <div className="preview-image-boxes">
+                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                            </div>
+                            <p>前端负责人。搭建了前端的整体架构，包括：制定前端静态资源目录结构和代码标准,网站前端业务层面开发。根据团队之前的开发进行了重构,分离前后端职责，提高开发效率。负责共筹网多终端的响应式设计与实现</p>
+                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                            <hr />
+                            <h3><a href="">夸克资讯</a></h3>
+                            <div className="preview-image-boxes">
+                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                            </div>
+                            <p>前端独立制作了资讯的阅读展示，和文章评论系统开发，响应式设计与实现。包括后台的富文本文章发布等。</p>
+                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                            <hr />
+                            <h3><a href="">VC Saas</a></h3>
+                            <div className="preview-image-boxes">
+                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                            </div>
+                            <p>vc-saas是一个服务于创投/基金/投资管理机构的云服务平台，是一个多入口的单页应用，完成了整个应用的前端开发，包括UI框架，angular SPA，和gulp构建工具等</p>
+                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                            <hr />
+                            <h3><a href="">梦创空间</a></h3>
+                            <div className="preview-image-boxes">
+                                <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                            </div>
+                            <p>搭建了梦创空间的前端环境，开发和维护了最初版本的官网。</p>
+                            <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                        </section>
+                    </article>
+                </div>
+                );
+        }
+    });
+    var CaseSmall = React.createClass({
+            render: function(){
+                return(
+                    <div className="col-lg-9 main-container">
+                        <article className="markdown">
+                            <h1>Cases<span className="subtitle">小型业务</span></h1>
+                            <section className="markdown">
+                                <h3><a href="http://liuyizhou.github.io/tencentH5/index.html">腾讯五星员工</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p><b>移动端</b>的微场景页面，根据PSD稿1:1切图，制作，设计CSS3动画并实现。</p>
+                                <p><a href="http://liuyizhou.github.io/tencentH5/index.html">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">彩票-双色球</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>移动端的react制作的仿app页面。CSS3动画和zepto.js制作的双色球选号购买、查看开奖。</p>
+                                <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">父亲节小游戏</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>移动端分享的微场景页面，父亲节宣传策划</p>
+                                <p><a href="http://www.gongchou.com/fatherday#rd">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">农历新年求签游戏</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>移动端分享的微场景页面，新年宣传策划，使用rem为单位还原设计稿，对接微信接口。</p>
+                                <p><a href="http://www.gongchou.com/fortunetelling/#rd">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">路演活动现场</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>包括手机微信签到，微信红包打赏，手机模拟新三板挂牌敲钟等游戏（活动进行时开启）</p>
+                                <p><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfcd2635328032eed&redirect_uri=http%3A%2F%2Fweixin.zhimei360.com%2Fwechat%2Fsignin%2F589&response_type=code&scope=snsapi_base&state=wechat_auth_snsapi_for_state#wechat_redirect">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                            </section>
+                        </article>
+                    </div>
+                    );
+            }
+    });
     var Case = React.createClass({
         render: function(){
             return(
                 <div className="container">
                     <div className="main-wrapper">
-                        <div className="col-lg-2">
-                            <ul>
-                                <li>实践案例</li>
-                                <li>小型业务</li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-10 main-container">
-                            <article className="markdown">
-                                <h1>Cases<span className="subtitle">实践案例</span></h1>
-                                <section className="markdown">
-                                    <h3><a href="">共筹网</a></h3>
-                                    <div className="preview-image-boxes">
-                                        <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
-                                    </div>
-                                    <p>前端负责人。搭建了前端的整体架构，包括：制定前端静态资源目录结构和代码标准,网站前端业务层面开发。根据团队之前的开发进行了重构,分离前后端职责，提高开发效率。负责共筹网多终端的响应式设计与实现</p>
-                                    <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
-                                    <hr />
-                                    <h3><a href="">夸克资讯</a></h3>
-                                    <div className="preview-image-boxes">
-                                        <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
-                                    </div>
-                                    <p>前端独立制作了资讯的阅读展示，和文章评论系统开发，响应式设计与实现。包括后台的富文本文章发布等。</p>
-                                    <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
-                                    <hr />
-                                </section>
-                            </article>
-                        </div>
+                        <NavContent />
+                        <CaseSmall />
                     </div>
                 </div>
             ); 
         }           
     });
+    var More = React.createClass({
+        render: function(){
+            return (
+            <div>
+                <div className="container">
+                    <div className="main-wrapper">
+                        <div className="main-container">
+                            <article className="markdown">
+                                <h1>了解更多<span className="subtitle">More</span></h1>
+                                
+                                <blockquote>
+                                    <p>古人有云『 问之以是非而观其志，穷之以辞辩而观其变，咨之以计谋而观其识，告之以难而观其勇 ，醉之以酒而观其性 ，临之以利而观其廉，期之以事而观其信 』，而时至今日了解一个人，追踪他的网络踪迹、社交媒体历史就能有大致了解了
+                                    </p>
+                                </blockquote>
+                                <p>了解更多或者联系我的社交网路 Social Network </p>
+                                <hr />
+                                <p><a href="#">微信账号</a></p>
+                                <p><a href="http://weibo.com/tastychang" target="_blank">个人微博</a></p>
+                                <p><a href="http://www.zhihu.com/people/liuyizhou" target="_blank">知乎账号</a></p>
+                                <hr />
+                                <p><a href="http://www.cnblogs.com/goodbeypeterpan/" target="_blank">我的博客</a></p>
+                                <p><a href="">github</a></p>
+                                <p><a href="http://500px.me/community/user-details/1bead4a88490fa937c9510ab224517719" target="_blank">摄影作品</a></p>
+                            </article>
+                      </div>    
+                    </div>
+                </div>
+            </div>
+            )
+        }
+    });
     ReactDOM.render(
         <div className="react-content">
             <Header />
-            <Case />
+            <Intro />
+            <More />
         </div>,
         document.getElementById('react-content')
     );

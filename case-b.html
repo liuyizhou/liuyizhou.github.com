@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="liuchang's page,let u know me" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div id="react-content"></div>
+    <script type="text/babel">
+    var Header = React.createClass({
+        render: function(){
+            return (
+                <header className="clearfix" id="header">
+                    <div className="col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <a href="javascript:;" id="logo">
+                            <img className="img-circle" src="https://pic1.zhimg.com/68134fc71f13f3658b6d1f1783cdb05c_l.jpg" alt="avatar" />
+                            <span>tasty</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-offset-4 col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <ul className="nav navbar-nav" id="nav">
+                            <li><a href="">简介</a></li>
+                            <li><a href="">案例</a></li>
+                            <li><a href="">更多</a></li>
+                        </ul>
+                    </div>
+                </header>
+            );
+        }
+    });
+    var NavContent = React.createClass({
+        render: function(){
+            return(
+                <div className="col-lg-3 row">
+                    <ul className="nav nav-pills nav-stacked menu">
+                        <li className="menu-item"><a href="">实践案例</a></li>
+                        <li className="menu-item menu-item-selected"><a href="">小型业务</a></li>
+                    </ul>
+                </div>
+            );
+        }
+    });
+    var CaseSmall = React.createClass({
+            render: function(){
+                return(
+                    <div className="col-lg-9 main-container">
+                        <article className="markdown">
+                            <h1>Cases<span className="subtitle">小型业务</span></h1>
+                            <section className="markdown">
+                                <h3><a href="http://liuyizhou.github.io/tencentH5/index.html">腾讯五星员工</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p><b>移动端</b>的微场景页面，根据PSD稿1:1切图，制作，设计CSS3动画并实现。</p>
+                                <p><a href="http://liuyizhou.github.io/tencentH5/index.html">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">彩票-双色球</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>移动端的react制作的仿app页面。CSS3动画和zepto.js制作的双色球选号购买、查看开奖。</p>
+                                <p><a href="">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">父亲节小游戏</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>移动端分享的微场景页面，父亲节宣传策划</p>
+                                <p><a href="http://www.gongchou.com/fatherday#rd">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">农历新年求签游戏</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>移动端分享的微场景页面，新年宣传策划，使用rem为单位还原设计稿，对接微信接口。</p>
+                                <p><a href="http://www.gongchou.com/fortunetelling/#rd">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                                <h3><a href="">路演活动现场</a></h3>
+                                <div className="preview-image-boxes">
+                                    <img className="preview-img" src="https://os.alipayobjects.com/rmsportal/kBgLUfEwxlBdwUr.png" />
+                                </div>
+                                <p>包括手机微信签到，微信红包打赏，手机模拟新三板挂牌敲钟等游戏（活动进行时开启）</p>
+                                <p><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfcd2635328032eed&redirect_uri=http%3A%2F%2Fweixin.zhimei360.com%2Fwechat%2Fsignin%2F589&response_type=code&scope=snsapi_base&state=wechat_auth_snsapi_for_state#wechat_redirect">立即访问<span className="icon redirect"><span className="icon-arrowRight"></span></span></a></p>
+                                <hr />
+                            </section>
+                        </article>
+                    </div>
+                    );
+            }
+    });
+    var Case = React.createClass({
+        render: function(){
+            return(
+                <div className="container">
+                    <div className="main-wrapper">
+                        <NavContent />
+                        <CaseSmall />
+                    </div>
+                </div>
+            ); 
+        }           
+    });
+    ReactDOM.render(
+        <div className="react-content">
+            <Header />
+            <Case />
+        </div>,
+        document.getElementById('react-content')
+    );
+    </script>
+</body>
+
+</html>

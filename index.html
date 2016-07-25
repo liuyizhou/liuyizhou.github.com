@@ -1,60 +1,138 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="fakefish's page,let u know me" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="liuchang's page,let u know me" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
-    <h1>liuchang</h1>
-    <dl>
-        <dt>Email</dt>
-        <dd>tastychang[at]gmail.com</dd>
-        <dt>Birthday</dt>
-        <dd>1993.1</dd>
-        <dt>Work Experience</dt>
-        <dd>
-            <ol>
-                <li>10.2014 - 6.2015 深圳市共筹互联网金融服务有限公司</li>
-            </ol>
-        </dd>
-        <dt>Social</dt>
-        <dd>
-            <ol>
-                <li><a href="http://www.cnblogs.com/goodbeypeterpan/">技术博客</a></li>
-                <li><a href="https://github.com/liuyizhou">Github</a></li>
-                <li><a href="http://weibo.com/tastychang">新浪微博</a></li>
-                <li><a href="http://www.zhihu.com/people/liuyizhou">知乎</a></li>
-                <li><a href="http://git.oschina.net/signup?inviter=tastylc">OSChina</a></li>
-            </ol>
-        </dd>
-        <dt>Works</dt>
-        <dd>
-            <ul>
-                <li>3.2016 <a href="http://vcsaas.cn">VC Saas</a></li>
-                <li>6.2015 <a href="http://www.gongchou.com/article/all">夸克资讯</a></li>
-                <li>4.2015 <a href="http://www.dreamspacex.com/">梦创空间</a></li>
-                <li>6.2015 socket.io随机匹配聊天[毕业设计][<a href="http://www.mestranger.com/">Mestranger（下线）</a>][<a href="http://git.oschina.net/tastylc/Mestranger">源码</a>]</li>
-                <li>10.2014 <a href="http://www.gongchou.com">共筹网</a></li>
-            </ul>
-        </dd>
-        <dt>Demos</dt>
-        <dd>
-            <ul>
-                <li>10.2015 <a href="http://liuyizhou.github.io/tencentH5/index.html">腾讯五星员工H5</a></li>
-                <li>11.2015 <a href="http://liuyizhou.github.io/11pick5/index.html">React彩票工具</a></li>
-            </ul>
-        </dd>
-        <dt>
-            <ul>
-                <li><a href="http://liuyizhou.github.io/resume.pdf">PDF-Resume</a></li>
-                <li><a href="http://liuyizhou.github.io/fullpage-cv/intro.html">Fullpage-Resume</a></li>
-            </ul>
-        </dt>
-    </dl>
-    <hr>
-    <footer>
-        &copy;liuchang
-    </footer>
+    <div id="react-content"></div>
+    <script type="text/babel">
+    var Header = React.createClass({
+        render: function(){
+            return (
+                <header className="clearfix" id="header">
+                    <div className="col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <a href="javascript:;" id="logo">
+                            <img className="img-circle" src="https://pic1.zhimg.com/68134fc71f13f3658b6d1f1783cdb05c_l.jpg" alt="avatar" />
+                            <span>tasty</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-offset-4 col-xs-12 col-sm-7 col-md-6 col-lg-4">
+                        <ul className="nav navbar-nav" id="nav">
+                            <li><a href="">简介</a></li>
+                            <li><a href="">案例</a></li>
+                            <li><a href="">更多</a></li>
+                        </ul>
+                    </div>
+                </header>
+            );
+        }
+    });
+    var Intro = React.createClass({
+            render: function(){
+                return (
+                    <div className="container">
+                        <div className="main-wrapper">
+                            <div className="col-lg-12">
+                                <div className="avatar-warp">
+                                    <img className="avatar img-responsive" src="http://wx.qlogo.cn/mmopen/kWDDPO3KRLw4FibUzicco5EG5ImXMPqQGCxMFo5pPVS3Gm243lJIHw5RpmBgX9tRn8yhXRYBtRgfresDyBMq2vUgHh0cicGejiah/0" alt="avatar" />
+                                </div>
+                                <section className="markdown">
+                                    <h1 className="text-center">信仰比知识更难动摇,热爱比尊重更难变易</h1>
+                                    <hr />
+                                    <form className="form-horizontal intro-form">
+                                        <div className="form-group">
+                                            <div className="col-sm-2 form-ctrl-label">姓名：</div>
+                                            <div className="col-sm-10">刘畅</div>
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="col-sm-2 form-ctrl-label">年龄：</div>
+                                            <div className="col-sm-10">23岁</div>
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="col-sm-2 form-ctrl-label">工作：</div>
+                                            <div className="col-sm-10">前端工程师</div>
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="col-sm-2 form-ctrl-label">邮箱：</div>
+                                            <div className="col-sm-10">
+                                                <a href="mailto:tastychang@163.com">
+                                                    <span className="icon send"><span className="icon-mail"></span></span>
+                                                </a>
+                                                tastychang@163.com
+                                            </div>
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="col-sm-2 form-ctrl-label">技能：</div>
+                                            <div className="col-sm-10"><span className="icon"><span className="icon-stats"></span></span>
+                                            </div>
+                                            <div className="col-sm-offset-2 col-sm-10 tech-skill">
+                                                <ul className="tech-skill-list">
+                                                    <li>
+                                                        <h4>Javascript</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>HTML5</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>css3</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>NODE.JS</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>ASP.NET&C#</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Photoshop</h4>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="col-sm-2 form-ctrl-label">简介：</div>
+                                            <div className="col-sm-10">
+                                                <p>具有 JavaScript 开发经验，使用过如jQuery常见类库或框架。</p>
+                                                <p>了解 AngularJS 、avalon 等 MVC 框架，有单页面应用经验。</p>
+                                                <p>对 Web 性能优化感到兴奋，乐于钻研前端效果的实现。喜欢发现和尝试新的前端技术，阅读开源的高级项目，旨在提高编写高质量的前端代码。</p>
+                                                <p>有一定的网页设计能力，偏向简约风格，了解交互设计准则和响应式设计。</p>
+                                                <p>了解Axure等网页原型工具，能充分了解产品目标和意图。</p>
+                                                <p>热衷于产品和前端技术的交流讨论。</p>
+                                            </div>
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="col-sm-2 form-ctrl-label">兴趣：</div>
+                                            <div className="col-sm-10">
+                                                <p>对移动端前端开发的兴趣更加浓厚</p>
+                                                <p>投资、金融小白</p>
+                                                <p>入门级健身人、好久打一次的篮球爱好者</p>
+                                                <p>不懂构图、光线、后期的摄影爱好者</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+    });
+    ReactDOM.render(
+        <div className="react-content">
+            <Header />
+            <Intro />
+        </div>,
+        document.getElementById('react-content')
+    );
+    </script>
 </body>
+
 </html>
