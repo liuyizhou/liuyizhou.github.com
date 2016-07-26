@@ -15,6 +15,12 @@
     <div id="react-content"></div>
     <script type="text/babel">
     var Header = React.createClass({
+        getInitialState: function() {
+            return {show: false};
+        },
+        handleClick: function() {
+            this.setState({show: !this.state.show});
+        },
         render: function(){
             return (
                 <header className="clearfix" id="header">
@@ -23,9 +29,12 @@
                             <img className="img-circle" src="img/logo.jpg" alt="avatar" />
                             <span>tasty</span>
                         </a>
+                        <a href="javascript:;" className="nav-phone visible-xs" onClick={this.handleClick}>
+                            <span className="icon"><span className="icon-menu"></span></span>
+                        </a>
                     </div>
                     <div className="col-lg-offset-4 col-xs-12 col-sm-7 col-md-6 col-lg-4">
-                        <ul className="nav navbar-nav" id="nav">
+                        <ul className={this.state.show?"nav navbar-nav nav-show":"nav navbar-nav"} id="nav">
                             <li><a href="index.html">简介</a></li>
                             <li><a href="case-a.html">案例</a></li>
                             <li><a href="more.html">更多</a></li>
@@ -48,7 +57,7 @@
                                     <p>古人有云『 问之以是非而观其志，穷之以辞辩而观其变，咨之以计谋而观其识，告之以难而观其勇 ，醉之以酒而观其性 ，临之以利而观其廉，期之以事而观其信 』，而时至今日了解一个人，追踪他的网络踪迹、社交媒体历史就能有大致了解了
                                     </p>
                                 </blockquote>
-                                <img src="img/social.jpg" alt="Social Media" />
+                                <img className="img-responsive" src="img/social.jpg" alt="Social Media" />
                                 <p>了解更多或者联系我的社交网路 Social Network </p>
                                 <hr />
                                 <p><a href="#">微信账号</a></p>

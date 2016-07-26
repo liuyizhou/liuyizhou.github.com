@@ -15,6 +15,12 @@
     <div id="react-content"></div>
     <script type="text/babel">
     var Header = React.createClass({
+        getInitialState: function() {
+            return {show: false};
+        },
+        handleClick: function() {
+            this.setState({show: !this.state.show});
+        },
         render: function(){
             return (
                 <header className="clearfix" id="header">
@@ -23,9 +29,12 @@
                             <img className="img-circle" src="img/logo.jpg" alt="avatar" />
                             <span>tasty</span>
                         </a>
+                        <a href="javascript:;" className="nav-phone visible-xs" onClick={this.handleClick}>
+                            <span className="icon"><span className="icon-menu"></span></span>
+                        </a>
                     </div>
                     <div className="col-lg-offset-4 col-xs-12 col-sm-7 col-md-6 col-lg-4">
-                        <ul className="nav navbar-nav" id="nav">
+                        <ul className={this.state.show?"nav navbar-nav nav-show":"nav navbar-nav"} id="nav">
                             <li><a href="index.html">简介</a></li>
                             <li><a href="case-a.html">案例</a></li>
                             <li><a href="more.html">更多</a></li>
@@ -49,20 +58,20 @@
                                     <hr />
                                     <form className="form-horizontal intro-form">
                                         <div className="form-group">
-                                            <div className="col-sm-2 form-ctrl-label">姓名：</div>
-                                            <div className="col-sm-10">刘畅</div>
+                                            <div className="col-sm-2 col-xs-3 form-ctrl-label">姓名：</div>
+                                            <div className="col-sm-10 col-xs-9">刘畅</div>
                                         </div>
                                         <div className="form-group">
-                                            <div className="col-sm-2 form-ctrl-label">年龄：</div>
-                                            <div className="col-sm-10">23岁</div>
+                                            <div className="col-sm-2 col-xs-3 form-ctrl-label">年龄：</div>
+                                            <div className="col-sm-10 col-xs-9">23岁</div>
                                         </div>
                                         <div className="form-group">
-                                            <div className="col-sm-2 form-ctrl-label">工作：</div>
-                                            <div className="col-sm-10">前端工程师</div>
+                                            <div className="col-sm-2 col-xs-3 form-ctrl-label">工作：</div>
+                                            <div className="col-sm-10 col-xs-9">前端工程师</div>
                                         </div>
                                         <div className="form-group">
-                                            <div className="col-sm-2 form-ctrl-label">邮箱：</div>
-                                            <div className="col-sm-10">
+                                            <div className="col-sm-2 col-xs-3 form-ctrl-label">邮箱：</div>
+                                            <div className="col-sm-10 col-xs-9">
                                                 <a href="mailto:tastychang@163.com">
                                                     <span className="icon send"><span className="icon-mail"></span></span>
                                                 </a>
@@ -70,8 +79,8 @@
                                             </div>
                                         </div>
                                         <div className="form-group">
-                                            <div className="col-sm-2 form-ctrl-label">技能：</div>
-                                            <div className="col-sm-10"><span className="icon"><span className="icon-stats"></span></span>
+                                            <div className="col-sm-2 col-xs-3 form-ctrl-label">技能：</div>
+                                            <div className="col-sm-10 col-xs-9"><span className="icon"><span className="icon-stats"></span></span>
                                             </div>
                                             <div className="col-sm-offset-2 col-sm-10 tech-skill">
                                                 <ul className="tech-skill-list">

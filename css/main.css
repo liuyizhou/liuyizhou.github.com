@@ -6849,6 +6849,11 @@ body {
 #nav li a{
   line-height: 50px;
 }
+.nav-phone{
+  height: 80px;
+  line-height: 80px;
+  float: right;
+}
 .main-wrapper {
     background: #fff;
     overflow: hidden;
@@ -6859,6 +6864,42 @@ body {
     padding: 24px 0 0;
     margin-bottom: 24px;
 }
+@media (max-width: 768px) {
+.main-wrapper {
+      width: 100%;
+      border-radius: 0;
+  }
+.container{
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: #fff;
+    line-height: 60px;
+    margin-right: 0;
+    width: 50%;
+    height: 100%;
+    box-shadow: 10px 0 12px rgba(0,0,0,.1);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    -webkit-transition: opacity .3s,-webkit-transform .3s;
+    transition: opacity .3s,-webkit-transform .3s;
+    transition: transform .3s,opacity .3s;
+    transition: transform .3s,opacity .3s,-webkit-transform .3s;
+}
+.nav-show{
+  -webkit-transform: translateX(-30px);
+    transform: translateX(-15px);
+    opacity: 1;
+}
+}
+
 .main-container {
     background: #fff;
     overflow: hidden;
@@ -6884,6 +6925,11 @@ body {
 }
 .markdown h1 {
     font-size: 28px;
+}
+@media (max-width: 768px) {
+  .markdown h1 {
+    font-size: 18px;
+  }
 }
 .markdown h1 .subtitle {
     font-weight: 400;
@@ -6953,6 +6999,27 @@ body {
 .send{
   margin-right: 10px;
   font-size: 1.2em;
+}
+/* Menu */
+.icon-menu,
+.icon-menu:before,
+.icon-menu:after {
+  position: absolute;
+  left: 0;
+  width: 1em;
+  height: .25em;
+  background-color: rgb(102, 102, 102); /* #666 */
+}
+.icon-menu {
+  top: .0625em;
+}
+.icon-menu:before {
+  content: "";
+  top: .3125em;
+}
+.icon-menu:after {
+  content: "";
+  top: .625em;
 }
 .icon-mail:before, .icon-mail:after {
     content: "";
@@ -7077,6 +7144,16 @@ body {
 .tech-skill-list li h4{
   margin: 10px 0;
 }
+@media (max-width: 768px) {
+  .tech-skill{
+    margin-top: 50px;
+  }
+  .tech-skill-list li h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+}
 .tech-skill-list li:nth-child(1){
   background-color: rgb(29, 128, 211);
   border-color: rgb(8, 23, 47);
@@ -7126,9 +7203,27 @@ body {
 .preview-img-sm{
   width: 220px;
 }
+@media (max-width: 768px) {
+  .preview-image-boxes {
+    width: 100%;
+  }
+  .preview-img{
+    width: 100%;
+  }
+}
 .menu{
     position: relative;
 }
+@media (max-width: 768px) {
+  .menu{
+    float: none;
+    width: auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 30px;
+  }
+}
+
 .menu-item{
     padding:0 10px 0 24px;
     font-size: 14px;
